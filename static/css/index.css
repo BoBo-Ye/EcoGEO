@@ -260,6 +260,7 @@ section {
 }
 
 .publication-authors > span {
+  color: var(--teal);
   white-space: nowrap
 }
 
@@ -273,6 +274,7 @@ section {
 }
 
 .publication-authors a,
+.publication-authors a:visited,
 .publication-authors a:hover,
 .publication-authors a:focus {
   color: inherit
