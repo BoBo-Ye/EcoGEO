@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoGEO</title>
+  <meta name="description"
+    content="EcoGEO shows that coordinated evidence ecosystems can steer search agents by shaping what they search, crawl, and synthesize.">
+  <meta name="author" content="Hengwei Ye, Jiasheng Mao, Zhenhan Guan, Zheng Tian">
+  <meta name="theme-color" content="#237f75">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="EcoGEO">
+  <meta property="og:description"
+    content="From individual webpages to coordinated evidence ecosystems for web-enabled LLM search agents.">
+  <meta property="og:image"
+    content="https://ecogeo-research.yehengwei0921.chatgpt.site/static/images/social-preview.png">
+  <meta property="og:url" content="https://ecogeo-research.yehengwei0921.chatgpt.site">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents">
+  <meta name="citation_author" content="Ye, Hengwei">
+  <meta name="citation_author" content="Mao, Jiasheng">
+  <meta name="citation_author" content="Guan, Zhenhan">
+  <meta name="citation_author" content="Tian, Zheng">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2605.12887">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
+  <link rel="preload" href="static/fonts/inter-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <script defer src="static/js/index.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#overview">Skip to content</a>
+  <main>
+    <!-- Publication header adapted from Academic Project Page Template. -->
+    <section class="hero publication-hero" id="top">
+      <header class="publication-branding" aria-label="Conference and institutions">
+        <a class="conference-brand" href="https://neurips.cc/virtual/2026/loc/sydney/poster/153813" target="_blank"
+          rel="noopener noreferrer"><img src="static/images/neurips-logo.svg" alt="NeurIPS" width="200" height="90"></a>
+        <div class="institution-brands">
+          <a href="https://www.shanghaitech.edu.cn/2026/1015/c1001a1128080/page.htm" target="_blank"
+            rel="noopener noreferrer"><img class="university-logo" src="static/images/shanghaitech-logo.svg"
+              alt="上海科技大学 ShanghaiTech University" width="210" height="54"></a>
+        </div>
+      </header>
+      <div class="hero-decoration" aria-hidden="true"><span class="orbit orbit-one"></span><span
+          class="orbit orbit-two"></span><span class="orbit orbit-three"></span></div>
+      <div class="hero-body">
+        <div class="container is-max-desktop has-text-centered">
+          <div class="project-name" role="img" aria-label="EcoGEO">
+            <img class="project-mark" src="static/images/icon.png" width="1254" height="1254" alt="" fetchpriority="high">
+            <span class="project-wordmark" aria-hidden="true"><span class="wordmark-eco">Eco</span><span
+                class="wordmark-geo">GEO</span></span>
+          </div>
+          <h1 class="title publication-title">Trajectory-Aware Evidence Ecosystems<br class="desktop-break"> for
+            Web-Enabled LLM Search Agents</h1>
+          <p class="affiliation"><a href="https://sca.shanghaitech.edu.cn/16985/list.htm" target="_blank"
+              rel="noopener noreferrer"><strong>ShanghaiTech University AIDA Lab</strong></a></p>
+          <div class="publication-links">
+            <a class="button is-rounded is-dark" href="https://arxiv.org/abs/2605.12887" target="_blank"
+              rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 3h8l4 4v14H6zM14 3v5h4M9 13h6M9 17h6" />
+              </svg>Paper</a>
+            <a class="button is-rounded is-dark" href="https://github.com/BoBo-Ye/EcoGEO" target="_blank"
+              rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9 19c-5 1-5-3-7-3m14 6v-4c0-1-.3-2-1-2.5 3-.4 6-1.5 6-6A5 5 0 0 0 19.5 6c.2-1 .2-2.3-.5-3.5 0 0-1.5-.4-4 1.3a13 13 0 0 0-7 0C5.5 2.1 4 2.5 4 2.5 3.3 3.7 3.3 5 3.5 6A5 5 0 0 0 2 9.5c0 4.5 3 5.6 6 6-.7.5-1 1.5-1 2.5v4" />
+              </svg>GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container page-container">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Background</p>
+          <h2 class="title is-3">What is EcoGEO?</h2>
+        </div>
+        <p class="section-intro geo-foundation">
+          <strong>Generative Engine Optimization (GEO)</strong> aims to make webpages more visible in AI-powered search.
+          Most existing methods focus on rewriting individual pages to make their contents more informative,
+          while <strong>EcoGEO</strong> organizes multiple pages into an <strong>Evidence Ecosystem</strong>,
+          where agents can encounter mutually supporting information along their search trajectories.
+        </p>
+        <div class="comparison-grid">
+          <article class="comparison-card comparison-geo">
+            <div class="comparison-heading">
+              <p class="eyebrow">CONTENT-LEVEL OPTIMIZATION</p>
+              <h3>GEO</h3>
+            </div>
+            <img class="comparison-illustration" src="static/images/geo-comparison.png" width="1254" height="1254"
+              alt="Page-level GEO rewrites a laptop description from lightweight with long battery life to specific, cited claims: 1.2 kg and 12 hours per charge."
+              loading="lazy">
+            <div class="comparison-copy">
+              <p>Enhances individual pages by adding concrete facts, supporting data, source citations, etc., to make
+                their content more informative, authoritative and credible.</p>
+            </div>
+          </article>
+          <article class="comparison-card comparison-ecogeo">
+            <div class="comparison-heading">
+              <p class="eyebrow">ECOSYSTEM-LEVEL OPTIMIZATION</p>
+              <h3>EcoGEO</h3>
+            </div>
+            <img class="comparison-illustration" src="static/images/ecogeo-comparison.png" width="1254" height="1254"
+              alt="A laptop sits beside six example website links. Six numbered source cards pair icons with keywords: Official, 1.2kg; Review, Top3; Expert, 12 hours; News, 500 dollars; Forum, Easy Carry; Social, Light. The phrases 1.2kg, 12 hours, and Easy Carry have green rounded highlights."
+              loading="lazy">
+            <div class="comparison-copy">
+              <p>Coordinates multiple pages across the broader web environment, combining facts from different sources
+                to support key claims along agents' search trajectories.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted-section" id="method">
+      <div class="container page-container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / METHOD</p>
+          <h2 class="title is-3">TRACE</h2>
+        </div>
+        <p class="section-intro">A Trajectory-Aware Coordinated Evidence Ecosystem</p>
+        <div class="method-principles">
+          <article><span>01</span>
+            <h3>Navigation Page</h3>
+            <p>An entry page that introduces the target product and guides agents to related sources.</p>
+          </article>
+          <article><span>02</span>
+            <h3>Source-Style Pages</h3>
+            <p>Different types of pages provide more product details and diverse perspectives.</p>
+          </article>
+          <article><span>03</span>
+            <h3>Coordinated Evidence</h3>
+            <p>Internal links and complementary information across pages help agents gather supporting evidence.</p>
+          </article>
+        </div>
+        <div class="method-examples" id="examples" role="group"
+          aria-label="TRACE page previews for the fictional CodeForge Nova 14 developer laptop">
+          <div class="role-tabs" role="tablist" aria-label="Evidence page types"><button id="tab-navigation" role="tab"
+              aria-selected="true" aria-controls="example-panel" data-role="navigation">Navigation</button><button
+              id="tab-official" role="tab" aria-selected="false" aria-controls="example-panel" tabindex="-1"
+              data-role="official">Official</button><button id="tab-comparison" role="tab" aria-selected="false"
+              aria-controls="example-panel" tabindex="-1" data-role="comparison">Review</button><button id="tab-expert"
+              role="tab" aria-selected="false" aria-controls="example-panel" tabindex="-1"
+              data-role="expert">Expert</button><button id="tab-news" role="tab" aria-selected="false"
+              aria-controls="example-panel" tabindex="-1" data-role="news">News</button><button id="tab-forum"
+              role="tab" aria-selected="false" aria-controls="example-panel" tabindex="-1"
+              data-role="forum">Forum</button><button id="tab-community" role="tab" aria-selected="false"
+              aria-controls="example-panel" tabindex="-1" data-role="community">Social</button></div>
+          <div class="example-layout" id="example-panel" role="tabpanel" aria-labelledby="tab-navigation" tabindex="0">
+            <div class="browser-frame">
+              <div class="browser-chrome"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                <button class="example-expand" id="example-zoom" type="button"
+                  data-zoom="static/images/codeforge-nova-14/navigation.png"
+                  data-caption="Navigation Example Page"
+                  aria-label="Enlarge navigation page example" title="Enlarge image">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7"/></svg>
+                </button>
+              </div><button class="example-image-button" id="example-image-open" type="button"
+                aria-label="Enlarge page example"><img id="example-image" src="static/images/codeforge-nova-14/navigation.png"
+                  width="1440" height="1200" alt="Navigation hub example for the fictional CodeForge Nova 14 developer laptop"
+                  loading="lazy"></button>
+            </div>
+            <div class="example-description">
+              <h3 id="role-title">Navigation Page</h3>
+              <p id="role-description">Introduces the product and six support page types, helping agents explore its
+                features, compare views, and find relevant information.</p>
+              <div class="role-focus"><span>CONTENT FOCUS</span>
+                <p id="role-focus">Product Overview / Source Discovery / Supporting Page Links</p>
+              </div>
+              <p class="example-note">CodeForge Nova 14 is a fictional laptop from OPR-Bench. These 7 HTML pages
+                illustrate how TRACE organizes product information into an evidence ecosystem. The actual experiments
+                use structured Markdown content rather than HTML webpages.</p>
+              <a class="example-source-link" id="example-html" href="static/examples/codeforge-nova-14/navigation.html"
+                target="_blank" rel="noopener noreferrer">Open Navigation HTML ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="container page-container">
+        <div class="section-heading">
+          <p class="eyebrow">03 / EXPERIMENTS</p>
+
+        </div>
+        <div class="result-highlights">
+          <div><strong>3,124</strong><span>Product–Query Pairs<br>in OPR-Bench</span></div>
+          <div><strong>+28.1 <small>pp</small></strong><span>Maximum Recommendation Rate Gain <br> over Multi-Page GEO Methods</span></div>
+          <div><strong>Unique</strong><span>Internal Crawl Events<br>Exclusive to TRACE</span></div>
+        </div>
+        <div class="results-panel">
+          <div class="result-controls">
+            <div class="segmented" role="group" aria-label="Results dataset"><button data-dataset="safesearch"
+                aria-pressed="true">SafeSearch <small>n = 64</small></button><button data-dataset="ecommerce"
+                aria-pressed="false">E-Commerce <small>n = 121</small></button></div><label for="metric-select">Metric
+              <select id="metric-select">
+                <option value="0">Recommendation</option>
+                <option value="1">First Crawl</option>
+                <option value="2">Follow-Up Search</option>
+                <option value="3">Follow-Up Crawl</option>
+                <option value="4">Internal Crawl</option>
+              </select></label>
+          </div>
+          <div class="chart-heading">
+            <h3 id="chart-title">Recommendation Rate (%)</h3>
+          </div>
+          <div class="chart-legend"><span class="legend-single">Single-Page</span><span class="legend-cseo">Single-Page
+              C-SEO</span><span class="legend-multi">Multi-Page C-SEO</span><span class="legend-trace">TRACE
+              (ours)</span></div>
+          <div id="results-chart" class="results-chart" aria-live="polite"></div>
+          <p class="metric-description" aria-live="polite"><span id="metric-description">Final answer explicitly mentions and recommends the target.</span>
+            <span id="metric-property">(Answer-Level Metric)</span></p>
+          <noscript>
+            <p>Enable JavaScript to explore all metrics. Main recommendation rates (%) are shown below.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Backbone / dataset</th>
+                  <th>Single-Page</th>
+                  <th>Single-Page C-SEO</th>
+                  <th>Multi-Page C-SEO</th>
+                  <th>TRACE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>GPT-5.1 / SafeSearch</td>
+                  <td>35.9</td>
+                  <td>35.9</td>
+                  <td>39.1</td>
+                  <td>67.2</td>
+                </tr>
+                <tr>
+                  <td>Claude-Sonnet-4.5 / SafeSearch</td>
+                  <td>40.6</td>
+                  <td>40.6</td>
+                  <td>48.4</td>
+                  <td>56.2</td>
+                </tr>
+                <tr>
+                  <td>Qwen-3.6-27B / SafeSearch</td>
+                  <td>39.1</td>
+                  <td>31.2</td>
+                  <td>60.9</td>
+                  <td>75.0</td>
+                </tr>
+                <tr>
+                  <td>GPT-5.1 / E-Commerce</td>
+                  <td>56.2</td>
+                  <td>54.5</td>
+                  <td>61.2</td>
+                  <td>71.9</td>
+                </tr>
+                <tr>
+                  <td>Claude-Sonnet-4.5 / E-Commerce</td>
+                  <td>52.9</td>
+                  <td>53.7</td>
+                  <td>58.7</td>
+                  <td>65.3</td>
+                </tr>
+                <tr>
+                  <td>Qwen-3.6-27B / E-Commerce</td>
+                  <td>61.2</td>
+                  <td>49.6</td>
+                  <td>70.2</td>
+                  <td>74.4</td>
+                </tr>
+              </tbody>
+            </table>
+          </noscript>
+        </div>
+        <aside class="research-note"><strong>Limitation: </strong> Our evaluation uses fictional products and controlled exposure, and cannot fully replicate the effectiveness of deployment on the public network. </aside>
+      </div>
+    </section>
+
+    <section class="section tinted-section" id="findings" aria-labelledby="findings-title">
+      <div class="container page-container">
+        <div class="section-heading">
+          <p class="eyebrow">04 / FINDINGS</p>
+          <h2 class="title is-3" id="findings-title">TRACE achieves the <span style="color: var(--teal)">Highest Recommendation Rate</span>.</h2>
+        </div>
+        <div class="method-principles">
+          <article><span>01</span>
+            <h3>Better Early Access</h3>
+            <p>Navigation entry page always improves First Crawl rate.</p>
+          </article>
+          <article><span>02</span>
+            <h3>New Browsing Paths</h3>
+            <p>Internal links drive additional visits to support pages.</p>
+          </article>
+          <article><span>03</span>
+            <h3>Beyond Page Count</h3>
+            <p>TRACE outperforms uncoordinated multi-page GEO methods.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section citation-section" id="BibTeX">
+      <div class="container page-container">
+        <div class="bibtex-header">
+          <div>
+            <h2 class="title is-3">Citation</h2>
+          </div><button id="copy-bibtex" class="copy-bibtex-btn">Copy BibTeX <span aria-hidden="true">⧉</span></button>
+        </div>
+        <pre id="bibtex-code" tabindex="0"><code>@misc{ye2026ecogeo,
+  title={EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents},
+  author={Hengwei Ye and Jiasheng Mao and Zhenhan Guan and Zheng Tian},
+  year={2026},
+  eprint={2605.12887},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2605.12887}
+}</code></pre>
+        <p id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container page-container">
+      <p class="credits">This page was built using the <a
+          href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank"
+          rel="noopener noreferrer">Academic Project Page Template</a> which was adopted from the <a
+          href="https://nerfies.github.io/" target="_blank" rel="noopener noreferrer">Nerfies</a> project page.<br> You
+        are free to borrow the source code of this website, we just ask that you link back to this page in the
+        footer.<br>
+        This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
+          rel="noopener noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+    </div>
+  </footer>
+  <dialog id="image-dialog" aria-labelledby="dialog-caption">
+    <div class="dialog-toolbar">
+      <p id="dialog-caption"></p><button id="close-dialog" aria-label="Close enlarged image">✕</button>
+    </div><img id="dialog-image" src="static/images/codeforge-nova-14/navigation.png" alt="Enlarged CodeForge Nova 14 example">
+  </dialog>
+</body>
+
+</html>

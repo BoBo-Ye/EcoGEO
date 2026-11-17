@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Isolated browser profile used to render the laptop evidence examples
+tmp/laptop-capture-profile/
