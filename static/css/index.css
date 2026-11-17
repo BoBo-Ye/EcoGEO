@@ -144,6 +144,26 @@ section {
   margin: 0 auto 18px
 }
 
+.news-section .section-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0 auto 30px;
+  background: var(--teal)
+}
+
+.news-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 24px;
+  list-style: disc
+}
+
+.news-list time {
+  white-space: nowrap
+}
+
 .accent {
   color: var(--teal)
 }
@@ -228,10 +248,34 @@ section {
   margin-bottom: 28px
 }
 
-.affiliation {
-  font-size: 18px;
-  color: var(--muted);
-  margin: 9px 0 0
+.publication-authors {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: .35em;
+  font-size: clamp(10px, 3vw, 20px);
+  font-weight: 500;
+  color: var(--teal)
+}
+
+.publication-authors > span {
+  white-space: nowrap
+}
+
+.publication-authors sup {
+  margin-left: 2px;
+  font-size: .7em;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: -.5em
+}
+
+.publication-authors a,
+.publication-authors a:hover,
+.publication-authors a:focus {
+  color: inherit
 }
 
 .publication-links {
@@ -1231,10 +1275,6 @@ dialog::backdrop {
 
   .desktop-break {
     display: none
-  }
-
-  .affiliation {
-    font-size: 16px
   }
 
   .publication-links {
