@@ -1599,6 +1599,12 @@ dialog::backdrop {
   padding-top: 4px
 }
 
+@media(min-width:901px) {
+  .publication-hero .hero-body {
+    margin-top: -100px
+  }
+}
+
 .method-examples {
   margin-top: 40px;
   padding-top: 12px;
