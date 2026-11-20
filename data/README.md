@@ -99,12 +99,11 @@ The following example shows the CodeForge Nova 14 instance and its official page
 Please cite the accompanying paper when using the dataset in research:
 
 ```bibtex
-@misc{ye2026ecogeo,
-  title={EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents},
+@inproceedings{ye2026ecogeo,
+  title={Eco{GEO}: Trajectory-Aware Evidence Ecosystems for Web-Enabled {LLM} Search Agents},
   author={Hengwei Ye and Jiasheng Mao and Zhenhan Guan and Zheng Tian},
+  booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
   year={2026},
-  eprint={2605.12887},
-  archivePrefix={arXiv},
-  url={https://arxiv.org/abs/2605.12887}
+  url={https://openreview.net/forum?id=IWhjevkPn4}
 }
 ```
