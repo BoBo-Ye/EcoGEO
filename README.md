@@ -17,7 +17,7 @@
 
 ## News
 
-- **[2026.09.25]** EcoGEO has been accepted as a poster at **[NeurIPS 2026](https://neurips.cc/virtual/2026/loc/sydney/poster/153813)**! 🎉
+- **[2026.09.25]** EcoGEO has been accepted as a poster at **[NeurIPS 2026](https://neurips.cc/virtual/2026/loc/sydney/poster/153813)**. 🎉
 - **[2026.11.19]** OPR-Bench is now available on **[Hugging Face](https://huggingface.co/datasets/BoBo-Ye/OPR-Bench)**.
 
 ## Dataset
