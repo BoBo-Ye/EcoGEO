@@ -100,7 +100,7 @@ Please cite the accompanying paper when using the dataset in research:
 
 ```bibtex
 @inproceedings{ye2026ecogeo,
-  title={Eco{GEO}: Trajectory-Aware Evidence Ecosystems for Web-Enabled {LLM} Search Agents},
+  title={EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents},
   author={Hengwei Ye and Jiasheng Mao and Zhenhan Guan and Zheng Tian},
   booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
   year={2026},
